@@ -21,19 +21,19 @@ public class ThirdServlet extends HttpServlet {
 		// response.getWriter().append("Served at: ").append(request.getContextPath());
 		response.setContentType("text/html; charset=utf-8");
 		PrintWriter out = response.getWriter();
-		out.print("<!<!DOCTYPE html>\n"
-				+ "<html lang=\"en\">\n"
-				+ "<head>\n"
-				+ "    <meta charset=\"UTF-8\">\n"
-				+ "    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n"
-				+ "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
-				+ "    <title>Test</title>\n"
-				+ "</head>\n"
-				+ "<body>\n"
-				+ "    <h1>Hello World!!!</h1>\n"
-				+ "    <h1>안녕하세요?</h1>\n"
-				+ "</body>\n"
-				+ "</html>");
+		out.print("<!<!DOCTYPE html>");
+		out.print("<html lang=\"en\">");
+		out.print("<head>");
+		out.print("    <meta charset=\"UTF-8\">");
+		out.print("    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">");
+		out.print("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
+		out.print("    <title>Test</title>");
+		out.print("</head>");
+		out.print("<body>");
+		out.print("    <h1>Hello World!!!</h1>");
+		out.print("    <h1>안녕하세요?</h1>");
+		out.print("</body>");
+		out.print("</html>");
 		
 	}
 
