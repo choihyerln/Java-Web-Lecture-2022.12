@@ -34,12 +34,10 @@ public class ThirdServlet extends HttpServlet {
 		out.print("    <h1>안녕하세요?</h1>");
 		out.print("</body>");
 		out.print("</html>");
-		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
-
 }
