@@ -1,5 +1,9 @@
 # choihyerln adds
 Exercise.java
+mysql.properties
+*.jar
+*.war
+*.class
 
 .metadata/
 bin/
