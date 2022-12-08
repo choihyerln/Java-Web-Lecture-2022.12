@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<body style="margin: 40px;">
+    <h1 style="color: blue;">회원가입</h1>
+    <hr>
+    <form action="/ch06/regMember" method="post"><br>
+        UID: <input type="text" name="uid" placeholder="사용자 아이디"><br><br>
+        PWD: <input type="password" name="pwd" placeholder="패스워드"><br><br>
+        PWD2: <input type="password" name="pwd2" placeholder="패스워드 확인"><br><br>
+        name: <input type="text" name="name" placeholder="성명"><br><br>
+        birthday: <input type="date" name="birthday"><br><br>
+        email: <input type="email" name="email"><br><br>
+        성별: <input type="radio" name="gender" value="남">남
+        <input type="radio" name="gender" value="여">여<br><br>
+        취미: <input type="checkbox" name="hobby" value="영화보기">영화보기
+        <input type="checkbox" name="hobby" value="음악듣기">음악듣기
+        <input type="checkbox" name="hobby" value="운동하기">운동하기
+        <input type="checkbox" name="hobby" value="독서하기">독서하기
+        <input type="checkbox" name="hobby" value="사진찍기">사진찍기<br><br>
+        
+        <input type="submit" value="가입">
+
+    </form>
+</body>
+</html>
