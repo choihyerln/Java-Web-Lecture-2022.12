@@ -62,7 +62,7 @@ public class Params extends HttpServlet {
 		out.print("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
 		out.print("    <title>Test</title>");
 		out.print("</head>");
-		out.print("<body>");
+		out.print("<body style=\"margin: 40px;\">");
 		out.print("    <h1>HttpServletRequest의 다양한 메소드</h1>");
 		out.print("    <hr>");
 		

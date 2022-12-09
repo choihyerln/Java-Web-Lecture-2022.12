@@ -54,7 +54,7 @@ public class ResisterMember extends HttpServlet {
 		out.print("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
 		out.print("    <title>Test</title>");
 		out.print("</head>");
-		out.print("<body>");
+		out.print("<body style=\"margin: 40px;\">");
 		out.print("    <h1>회원가입 정보</h1>");
 		out.print("    <hr>");
 		
