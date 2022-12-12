@@ -1,4 +1,4 @@
-package ch07;
+package ch08.customer;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,17 +10,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import ch08.Customer;
+
 /**
- * Servlet implementation class CustomerServlet
+ * Servlet implementation class ListViewer
  */
-@WebServlet("/ch07/customerList")
-public class CustomerServlet extends HttpServlet {
+@WebServlet("/ch08/customer/listView")
+public class ListViewer extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		CustomerDao dao = new CustomerDao();
-		List<Customer> list = dao.getCustomers();
-		
-		String data = "";
+		request.setCharacterEncoding("utf-8");
+		List<Customer> list = (List<Customer>)request.getAttribute("customerList");
 		
 		response.setCharacterEncoding("utf-8");
 		response.setContentType("text/html; charset=utf-8");
@@ -36,6 +36,7 @@ public class CustomerServlet extends HttpServlet {
 		out.print("<body style=\"margin: 40px;\">");
 		out.print("    <h1>회원 리스트</h1>");
 		out.print("    <hr>");
+		
 		data += "    <table border=\"1\">"
 				+ "        <tr>"
 				+ "            <th>사용자ID</th><th>사용자명</th><th>가입일</th>"
@@ -52,13 +53,10 @@ public class CustomerServlet extends HttpServlet {
 		
 		out.print("</table>");
 		out.print(" <br>");
-		out.print("<a href=\"/ch07/registerCustomer.html\">회원 가입</a>");
+		out.print("<a href=\"/ch08/customer/registerCustomer.html\">회원 가입</a>");
 		out.print("</body>");
 		out.print("</html>");
 	}
 	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
 	}
 }

@@ -17,14 +17,12 @@ public class Customer {
 	}
 
 	public Customer(String uid, String uname, LocalDate regDate, int isDeleted) {
-		
-		
-		super();
 		this.uid = uid;
 		this.uname = uname;
 		this.regDate = regDate;
 		this.isDeleted = isDeleted;
 	}
+	
 	public String getUid() {
 		return uid;
 	}
@@ -49,9 +47,9 @@ public class Customer {
 	public void setIsDeleted(int isDeleted) {
 		this.isDeleted = isDeleted;
 	}
+	
 	@Override
 	public String toString() {
 		return "Customer [uid=" + uid + ", uname=" + uname + ", regDate=" + regDate + ", isDeleted=" + isDeleted + "]";
 	}
-
 }
