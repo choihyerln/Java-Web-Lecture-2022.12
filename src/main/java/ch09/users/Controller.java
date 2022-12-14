@@ -17,19 +17,21 @@ import org.mindrot.jbcrypt.BCrypt;
 /**
  * Servlet implementation class Controller
  */
-@WebServlet(
-		name = "UserController", 
-		urlPatterns = { 
-				"/ch09/users/list", 
-				"/ch09/users/login", 
-				"/ch09/users/logout", 
-				"/ch09/users/register"
-		})
+//@WebServlet(
+//		name = "UserController", 
+//		urlPatterns = { 
+//				"/ch09/users/list", 
+//				"/ch09/users/login", 
+//				"/ch09/users/logout", 
+//				"/ch09/users/register"
+//		})
 public class Controller extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		String requestUri = request.getRequestURI();
+		String[] uri = requestUri.split("/");
+		String action = uri[uri.length - 1];
 		UserDao dao = new UserDao();
 		HttpSession session = request.getSession();
 		
