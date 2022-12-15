@@ -19,7 +19,7 @@
     <h1>회원 수정</h1>
     <hr>
     <form action="/ch12/users2/update" method="post">
-        <input type="hidden" name="uid" value="">
+        <input type="hidden" name="uid" value="<%= u.getUid() %>">
         <table>
             <tr>
                 <td>아이디:</td>
