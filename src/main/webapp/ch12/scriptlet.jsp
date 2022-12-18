@@ -9,9 +9,11 @@
 <% 
 	int age = 19;
 	String age_ = request.getParameter("age");
+	request.setAttribute("age", age_);
 	try {
 		age = Integer.parseInt(age_);
 	} catch (Exception e) {}
+	pageContext.setAttribute("agePage", 19);
 %>
 <!DOCTYPE html>
 <html>
@@ -22,5 +24,7 @@
 <body>
 	<h1>안녕하세요. <%= name %>님!!!</h1>
 	<h1>당신의 나이는 <%= age %>세 입니까?</h1>
+	<h1>Page context: ${agePage}</h1>
+	<h1>Request context: ${age}</h1>
 </body>
 </html>
