@@ -39,10 +39,24 @@
                 		<tr><th>아이디</th><th>이름<th><th>주소<th><th>인덱스<th></tr>
                     	<c:forEach var="member" items="${members}" varStatus="loop">
 	                    <tr>
-	                    		<td>${member.id}</td>
+	                    		<td>
+	                    		<c:if test="">
+	                    			${member.id}
+	                    		</c:if>
+	                    		</td>
 	                    		<td>${member.name}</td>
 	                    		<td>${member.addr}</td>
 	                    		<td>${loop.index}/${loop.count}</td>
+	                    	</tr>
+	                </c:forEach>
+                </table>
+                <table class="table">
+                    <tr><th>아이디</th><th>이름<th><th>주소<th></tr>
+                    	<c:forEach var="member" items="${members}" begin="1" end="3">
+	                    <tr>
+	                    		<td>${member.id}</td>
+	                    		<td>${member.name}</td>
+	                    		<td>${member.addr}</td>
 	                    	</tr>
 	                </c:forEach>
                 </table>

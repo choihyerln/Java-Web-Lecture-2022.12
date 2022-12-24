@@ -34,6 +34,7 @@ public class ThirdServlet extends HttpServlet {
 		out.print("    <h1>안녕하세요?</h1>");
 		out.print("</body>");
 		out.print("</html>");
+		System.out.println("성공");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

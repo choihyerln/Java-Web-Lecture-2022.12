@@ -29,27 +29,27 @@
                     <tr><td>\${null + 100}</td><td>${null + 100}</td></tr>
                     <%-- <tr><td>\${"안녕" + 100}</td><td>${"안녕" + 100}</td></tr> --%>
                     <%-- <tr><td>\${"H" + "hello"}</td><td>${"H" + "hello"}</td></tr> --%>
-                    <tr></tr><td></td><td></td><tr></tr>
-                    <tr></tr><td>\${10+10}</td><td>${10+10}</td><tr></tr>
-                    <tr></tr><td>\${3 div 2}</td><td>${3 div 2}</td><tr></tr>
-                    <tr></tr><td>\${100 % 9}</td><td>${100 % 9}</td><tr></tr>
-                    <tr></tr><td>\${100 mod 9}</td><td>${100 mod 9}</td><tr></tr>
-                    <tr></tr><td></td><td></td><tr></tr>
-                    <tr></tr><td>\${10==10}</td><td>${10==10}</td><tr></tr>
-                    <tr></tr><td>\${10 eq 10}</td><td>${10 eq 10}</td><tr></tr>
-                    <tr></tr><td>\${10 > 8}</td><td>${10 > 8}</td><tr></tr>
-                    <tr></tr><td>\${10 gt 8}</td><td>${10 gt 8}</td><tr></tr>
-                    <tr></tr><td>\${"hello" == "hello"}</td><td>${"hello" == "hello"}</td><tr></tr>
-                    <tr></tr><td>\${"hello" eq "hello"}</td><td>${"hello" eq "hello"}</td><tr></tr>
-                    <tr></tr><td></td><td></td><tr></tr>
-                    	<tr></tr><td>\${10==10 && 20==20}</td><td>${10==10 && 20==20}</td><tr></tr>
-                    	<tr></tr><td>\${10==11 and 20==20}</td><td>${10==11 and 20==20}</td><tr></tr>
-                    	<tr></tr><td>\${10==9 or 20==10}</td><td>${10==9 or 20==10}</td><tr></tr>
-                    	<tr></tr><td>\${not (10==10)}</td><td>${not (10==10)}</td><tr></tr>
-                    <tr></tr><td></td><td></td><tr></tr>
-                    	<tr></tr><td>\${empty "hello"}</td><td>${empty "hello"}</td><tr></tr>
-                    	<tr></tr><td>\${empty ""}</td><td>${empty ""}</td><tr></tr>
-                    	<tr></tr><td>\${empty null}</td><td>${empty null}</td><tr></tr>
+                    <tr><td></td><td></td></tr>
+                    <tr><td>\${10+10}</td><td>${10+10}</td><tr></tr>
+                    <%-- <tr><td>\${3 div 2}</td><td>${3 div 2}</td></tr> --%>
+                    <tr><td>\${100 % 9}</td><td>${100 % 9}</td></tr>
+                    <tr><td>\${100 mod 9}</td><td>${100 mod 9}</td></tr>
+                    <tr><td></td><td></td></tr>
+                    <tr><td>\${10==10}</td><td>${10==10}</td></tr>
+                    <tr><td>\${10 eq 10}</td><td>${10 eq 10}</td></tr>
+                    <tr><td>\${10 > 8}</td><td>${10 > 8}</td></tr>
+                    <tr><td>\${10 gt 8}</td><td>${10 gt 8}</td></tr>
+                    <tr><td>\${"hello" == "hello"}</td><td>${"hello" == "hello"}</td></tr>
+                    <tr><td>\${"hello" eq "hello"}</td><td>${"hello" eq "hello"}</td></tr>
+                    <tr><td></td><td></td><tr></tr>
+                    	<tr><td>\${10==10 && 20==20}</td><td>${10==10 && 20==20}</td></tr>
+                    	<tr><td>\${10==11 and 20==20}</td><td>${10==11 and 20==20}</td></tr>
+                    	<tr><td>\${10==9 or 20==10}</td><td>${10==9 or 20==10}</td></tr>
+                    	<tr><td>\${not (10==10)}</td><td>${not (10==10)}</td></tr>
+                    <tr><td></td><td></td></tr>
+                    	<tr><td>\${empty "hello"}</td><td>${empty "hello"}</td></tr>
+                    	<tr><td>\${empty ""}</td><td>${empty ""}</td></tr>
+                    	<tr><td>\${empty null}</td><td>${empty null}</td></tr>
                 </table>
             </div>
             <div class="col-2"></div>
