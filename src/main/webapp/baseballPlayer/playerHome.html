@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baseballPlayer Home</title>
+    <style>
+        * {
+          font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+            'Pretendard Variable', Pretendard, Roboto, 'Noto Sans KR', 'Segoe UI',
+            'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji',
+            'Segoe UI Symbol', sans-serif;
+          color: #333;
+        }
+        h1 {
+          margin: 0;
+        }
+        .contain-01 {
+          display: flex;
+          justify-content: center;
+        }
+        .contain-02 {
+          display: inline-block;
+        }
+        .title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+          border-bottom: solid 1px #eee;
+        }
+  
+        body {
+          margin-top: 80px;
+          margin-bottom: 100px;
+        }
+        tr,
+        td,
+        th {
+          padding: 25px;
+          border-bottom: solid 1px #eee;
+          text-align: center;
+        }
+        table {
+          margin: 0 auto;
+          border-collapse: collapse;
+        }
+        input[type='text'] {
+          font-size: 14px;
+          border: none;
+          background-color: rgba(250, 235, 215, 0.493);
+          height: 30px;
+          padding-inline: 15px;
+        }
+        button {
+          height: 28px;
+          font-weight: 600;
+          padding-inline: 10px;
+        }
+        input[type='button'] {
+          font-size: 15px;
+          height: 41px;
+          padding-inline: 28px;
+        }
+        .mainbtn {
+          background-color: #4880ee;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        .subbtn {
+          background-color: #e8f0fd;
+          color: #4880ee;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      </style>
+</head>
+<body>
+    <div class="contain-01">
+        <div class="contain-02">
+            <div class="title">
+                <h1>선수 리스트</h1>
+                <div>
+                    <input class="mainbtn" type="button" value="선수등록" onclick="location.href='/baseballPlayer/regPlayer.html'">
+                </div>
+            </div>
+            <table>
+                <tr style="background-color: #e8f0fd42;">
+                    <th>백넘버</th>
+                    <th>이름</th>
+                    <th>포지션</th>
+                    <th>생년월일</th>
+                    <th>키</th>
+                    <th>선수 정보 수정 / 방출</th>
+                </tr>
+                <tr>
+                    <td>p.getBNum</td>
+                    <td>p.getName</td>
+                    <td>p.getPosition</td>
+                    <td>p.getBirthDate</td>
+                    <td>p.getHeight</td>
+                    <td>
+                        <button class="subbtn" type="button" onclick="location.href='/baseballPlayer/updatePlayer?bNum=[]'">수정</button>
+                        <button class="subbtn" type="button" onclick="location.href='/baseballPlayer/deletePlayer?bNum=[]'">방출</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
