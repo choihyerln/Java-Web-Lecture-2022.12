@@ -31,6 +31,15 @@ public class Player {
 		this.isDeleted = isDeleted;
 	}
 	public Player(int bNum, String name) {
+		this.bNum = bNum;
+		this.name = name;
+	}
+	public Player(int bNum, String name, String position, String birthDate, int height) {
+		this.bNum = bNum;
+		this.name = name;
+		this.position = position;
+		this.birthDate = LocalDate.parse(birthDate);
+		this.height = height;
 	}
 	public int getbNum() {
 		return bNum;

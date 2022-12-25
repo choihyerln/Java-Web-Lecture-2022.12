@@ -15,7 +15,6 @@ import javax.servlet.http.HttpServletResponse;
 public class PlayerList extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private PlayerDAO dao = new PlayerDAO();
-	
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
@@ -25,7 +24,6 @@ public class PlayerList extends HttpServlet {
 		List <Player> list = dao.getPlayerList();
 		/** Print */
 		out.print(html(list));
-		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -143,7 +141,7 @@ public class PlayerList extends HttpServlet {
 					+ "              <button\r\n"
 					+ "                class=\"subbtn\"\r\n"
 					+ "                type=\"button\"\r\n"
-					+ "                onclick=\"location.href='/ch07/updatePlayer?bNum=")
+					+ "                onclick=\"location.href='/baseballPlayer/updatePlayer?bNum=")
 			.append(x.getbNum())
 			.append("'\"\r\n"
 					+ "              >\r\n"
@@ -152,7 +150,7 @@ public class PlayerList extends HttpServlet {
 					+ "              <button\r\n"
 					+ "                class=\"subbtn\"\r\n"
 					+ "                type=\"button\"\r\n"
-					+ "                onclick=\"location.href = '/ch07/deletePlayer?bNum=")
+					+ "                onclick=\"location.href = '/baseballPlayer/deletePlayer?bNum=")
 			.append(x.getbNum())
 			.append("'\"\r\n"
 					+ "              >\r\n"
