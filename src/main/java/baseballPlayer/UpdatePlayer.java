@@ -22,7 +22,6 @@ public class UpdatePlayer extends HttpServlet {
 		Player p = dao.getPlayer(bNum);
 		PrintWriter out = response.getWriter();
 		out.print(html(p));
-		
 	}
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -38,7 +37,6 @@ public class UpdatePlayer extends HttpServlet {
 		dao.updatePlayer(p);
 		response.sendRedirect("/baseballPlayer/playerList");
 	}
-
 
 	private StringBuilder html(Player p) {
 		StringBuilder sb = new StringBuilder();
@@ -186,5 +184,4 @@ public class UpdatePlayer extends HttpServlet {
 				+ "    </div>\r\n" + "  </body>\r\n" + "</html>");
 		return sb;
 	}
-
 }

@@ -64,7 +64,7 @@ public class PlayerDAO {
 			rs = pStmt.executeQuery();
 			
 			while(rs.next()) {
-				p.setbNum(rs.getInt(bNum));
+				p.setbNum(rs.getInt(1));
 				p.setName(rs.getString(2));
 				p.setPosition(rs.getString(3));
 				p.setBirthDate(LocalDate.parse(rs.getString(4)));

@@ -14,7 +14,6 @@ public class RegPlayer extends HttpServlet {
 	private static Player p;
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -38,8 +37,6 @@ public class RegPlayer extends HttpServlet {
 			p = new Player(bNum, name, position, birthDate, height);
 			dao.insertPlayer(p);
 			response.sendRedirect("/baseballPlayer/playerList");
-		
 		}
 	}
-
 }
